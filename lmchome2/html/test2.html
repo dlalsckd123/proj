@@ -1,0 +1,85 @@
+<!-- middle_left_content -->
+<div class="middle_left_content">
+    <!-- total_srch_area -->
+    <div class="total_srch_area">
+        <!-- total_srch_top -->
+        <div class="total_srch_top after_srch_bar">
+            <!-- total_srch_bar -->
+            <div class="total_srch_bar autoKeywordActiveArea">
+                <label for="searchProduct" class="blind">상품명을 검색하세요.</label>
+                <input type="text" class="total_srch_inpt placeholder" id="searchProduct" placeholder="상품명을 검색하세요." />
+                <button type="button" class="btn_search"><span class="hide_txt">검색</span></button>
+                <div id="searchKeywordList" style="display:none;"></div>
+            </div>
+            <!--// total_srch_bar -->
+            <a href="" class="btn_esti_02 btn_srch_reset" onclick="return false;" id="searchProductReset" style="display:none;"><span class="ico_board ico_reset"></span>검색 초기화</a>
+        </div>
+        <!--// total_srch_top -->
+    </div>
+    <!--// total_srch_area -->
+
+    <div id="estimateMainSearchOption"></div>
+    <div id="estimateMainProduct"></div>
+
+    <!-- product_list_cover -->
+    <div class="product_list_cover">
+        <div>
+            <img src="//img.danawa.com/img/market/shopdanawa_loader.gif" alt="로딩중">
+        </div>
+    </div>
+    <!--// product_list_cover -->
+</div>
+<!--// middle_left_content -->
+
+<!-- middle_right_content -->
+<div class="middle_right_content">
+
+    <!-- sale_house_check -->
+    <div class="sale_house_check">
+        <ul id="paymentMethod">
+            <!-- check_on: 선택상태, chekc_off: 선택안된상태 , 첫번째 li: class="first" -->
+            <li class="check_on first" key="2">
+                <div class="shc_tap">
+                    <a href="" onclick="return false;" onmousedown="gtagSend('PC견적메인','견적카트','현금최저가탭');">현금 최저가</a>
+                </div>
+            </li>
+            <li class="check_off" key="1">
+                <div class="shc_tap">
+                    <a href="" onclick="return false;" onmousedown="gtagSend('PC견적메인','견적카트','카드최저가탭');">카드 최저가</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--// sale_house_check -->
+
+    <div class="estimate_folder_wrap scroll--none">
+        <div class="estimate_folder_title item--selected estimateFolder show" key="0">
+            <a href="" onclick="return false;" role="button" onmousedown="gtagSend('PC견적메인','견적카트','견적카트');">견적카트</a>
+        </div>
+
+                        <div class="estimate_folder_box">
+            <a href="" onclick="return false;" class="btn__estimate-login checkLogin">로그인하여 저장한 견적들을 확인해보세요.</a>
+        </div>
+                    </div>
+
+    <div id="estimateMainWish"></div>
+
+    <!--// box_total -->
+    <div class="right_bottom_btn_wrap">
+        <a href="" onclick="openWishSaveForm(); return false;" class="btn_estimate_bottom" onmousedown="gtagSend('PC견적메인','하단버튼','견적저장');">견적저장</a>
+        <a href="" onclick="openWishProductLoadForm(); return false;" class="btn_estimate_bottom" onmousedown="gtagSend('PC견적메인','하단버튼','견적불러오기');">견적불러오기</a>
+        <a href="" onclick="estimateShare.popup(this); return false;" class="btn_estimate_bottom btn_sns_share" onmousedown="gtagSend('PC견적메인','하단버튼','견적공유');">견적공유</a>
+        <!--// sns_wrap -->
+        <a href="" onclick="openEstimateForm('capture'); return false;" class="btn_estimate_bottom" onmousedown="gtagSend('PC견적메인','하단버튼','견적캡쳐');">견적캡처</a>
+        <a href="" onclick="openEstimateForm('counselCapture'); return false;" class="btn_estimate_bottom" onmousedown="gtagSend('PC견적메인','하단버튼','PC구매상담');">PC구매상담</a>
+        <div class="tooltip-buypc" style="display:none">
+            <div class="tooltip-buypc__contents">
+                <span class="text--point">견적 상품 문의</span>를 쉽고 빠르게 할 수 있어요!
+            </div>
+            <a href="javascript:closeEstimateInfoTooltip();" role="button" class="btn__tooltip-close">다시 보지 않기</a>
+        </div>
+    </div>
+</div>
+<!--// middle_right_content -->
+</div>
+<!--// estimate_content -->
